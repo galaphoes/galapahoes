@@ -10,6 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+<style>
+.rsvp-lists{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.rsvp-group{border:1px solid var(--line);border-radius:8px;padding:10px;background:#f9fbfa}
+.rsvp-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin-bottom:7px}
+.rsvp-names{display:flex;gap:6px;flex-wrap:wrap}
+.rsvp-names span{font-size:11px;padding:4px 7px;border-radius:999px;background:#e7f2ef}
+.rsvp-names .rsvp-empty{background:transparent;padding:0;color:var(--muted)}
+.change-rsvp{width:100%;margin-top:8px;border:0;background:transparent;color:var(--muted);font-size:11px;text-decoration:underline;cursor:pointer}
+@media(max-width:640px){.rsvp-lists{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -210,6 +222,6 @@
   <div class="toast" id="toast"></div>
 
   <script src="config.js"></script>
-  <script src="app-v26.js"></script>
+  <script src="app-v27.js"></script>
 </body>
 </html>
