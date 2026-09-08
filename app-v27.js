@@ -18,14 +18,10 @@ itinerary:[
 ["JAN 04","Last Full Day","Final beach + dinner","https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80"],
 ["JAN 05","Departure","Pack up and head home","https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=900&q=80"]
 ],
-activities:[
-{id:"A001",name:"Kicker Rock Snorkeling",date:"DEC 29 · 9:00 AM",proposer:"Mike",description:"Boat + snorkeling day. Head count will help determine whether we reserve as a group.",cost:"$120 / person",min:8,status:"Open",image:"https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1000&q=80"},
-{id:"A002",name:"Tortuga Bay Beach Day",date:"DEC 30 · 11:00 AM",proposer:"Sarah",description:"Easy beach day. Come for all of it or wander over later.",cost:"Free",min:0,status:"Open",image:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"},
-{id:"A003",name:"Isabela Boat Trip",date:"JAN 02 · 8:00 AM",proposer:"Pablo",description:"Potential full-day boat trip. Exact pricing and timing TBD.",cost:"$90 est.",min:6,status:"Open",image:"https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=1000&q=80"}
-],
+activities:[],
 signups:[],
-crew:[{name:"Pablo",note:"Organizer"},{name:"Mike",note:"Going"},{name:"Sara",note:"Going"},{name:"Jordan",note:"Going"},{name:"Alex",note:"Going"}],
-flights:[{name:"Pablo",arrival:"Dec 27 · TBD",arrivalFlight:"TBD",departure:"Jan 5 · TBD",departureFlight:"TBD"}]
+crew:[],
+flights:[]
 };
 let state=JSON.parse(JSON.stringify(fallback));
 let signupsReady=!(CFG.data&&CFG.data.signupsCsv);
