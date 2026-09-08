@@ -15,7 +15,7 @@ window.TRIP_CONFIG = {
   data: {
     announcementsCsv: "",
     activitiesCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=1135045148&single=true&output=csv",
-    signupsCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=889843223&single=true&output=csv",
+    signupsCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=911906389&single=true&output=csv",
     crewCsv: "",
     flightsCsv: ""
   },
