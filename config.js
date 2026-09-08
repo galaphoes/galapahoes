@@ -13,11 +13,11 @@ window.TRIP_CONFIG = {
   },
 
   data: {
-    announcementsCsv: "",
+    announcementsCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=0&single=true&output=csv",
     activitiesCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=1135045148&single=true&output=csv",
     signupsCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=911906389&single=true&output=csv",
-    crewCsv: "",
-    flightsCsv: ""
+    crewCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=519307981&single=true&output=csv",
+    flightsCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQMZTW9gRHgt6Xo1r0hGkcWRprsTzqZoR5_ioqiidsmQTmKM-dBCsig_XQhyuvvxQZobWPDE477OREt/pub?gid=2114868579&single=true&output=csv"
   },
 
   signupActivityEntry: "entry.1974954568",
