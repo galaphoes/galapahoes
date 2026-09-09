@@ -11,7 +11,7 @@ itinerary:[
 ["DEC 29","Into the Blue","Open for snorkeling / boat proposals","https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80"],
 ["DEC 30","Island Mode","Choose your own adventure","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"],
 ["DEC 31","New Year's Eve","Group dinner + NYE plans TBD","https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80"],
-["JAN 01","Recovery","Nothing serious before noon","https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=900&q=80"],
+["JAN 01","Recovery","Nothing serious before noon","https://images.unsplash.com/photo-1713633848785-1452bfbfc531?auto=format&fit=crop&w=900&q=82"],
 ["JAN 02","Adventure","Open for a bigger excursion","https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"],
 ["JAN 03","Free Day","Pick your own adventure","https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"],
 ["JAN 04","Last Full Day","Final beach + dinner","https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80"],
