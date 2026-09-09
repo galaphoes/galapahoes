@@ -2,12 +2,11 @@
 const CFG=window.TRIP_CONFIG||{},$=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const fallback={
 announcements:[
-{date:"SEP 18",tag:"NEW",title:"Flight info + arrival coordination",body:"Please add your arrival and departure details so we can plan airport transportation and group logistics."},
-{date:"SEP 12",tag:"ACTIVITIES",title:"Activity proposals are live!",body:"Got an excursion, dinner, beach, hike, or weird idea? Propose it and let the group decide who wants in."},
-{date:"SEP 05",tag:"FOOD",title:"Grocery plan",body:"We'll use the site for house groceries and shared meal planning as the trip gets closer."}
+{date:"SEP 9",tag:"NEW",title:"Flight info + arrival coordination",body:"Please add your arrival and departure details so we can plan airport transportation and group logistics."},
+{date:"SEP 9",tag:"ACTIVITIES",title:"Activity proposals are live!",body:"Got an excursion, dinner, beach, hike, or weird idea? Propose it and let the group decide who wants in."},
 ],
 itinerary:[
-["DEC 27","Arrival","Get settled, explore town, welcome dinner","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"],
+["DEC 27","Arrival","Get settled, explore town, dinner in town","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"],
 ["DEC 28","Beach + Town","Groceries, beach, relax, get bearings","https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=80"],
 ["DEC 29","Into the Blue","Open for snorkeling / boat proposals","https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80"],
 ["DEC 30","Island Mode","Choose your own adventure","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"],
