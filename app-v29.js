@@ -20,7 +20,8 @@ itinerary:[
 activities:[],
 signups:[],
 crew:[],
-flights:[]
+flights:[],
+mainlandFlights:[]
 };
 const DEFAULT_ACTIVITY_IMAGE="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1000&q=80";
 
@@ -148,6 +149,16 @@ async function loadData(){
     note:x.Note||x.note||"Going"
    }));
   },renderCrew),
+
+  tryFeed("Mainland Flights",d.mainlandFlightsCsv,f=>{
+   state.mainlandFlights=f.map(x=>({
+    name:x.Name||x.name,
+    arrival:x.Arrival||x.arrival,
+    arrivalFlight:x.ArrivalFlight||x["Arrival Flight"]||"",
+    departure:x.Departure||x.departure,
+    departureFlight:x.DepartureFlight||x["Departure Flight"]||""
+   }));
+  },renderMainlandFlights),
 
   tryFeed("Flights",d.flightsCsv,f=>{
    state.flights=f.map(x=>({
@@ -403,18 +414,23 @@ function renderCrew(){
   ? state.crew.map(x=>`<article class="crew-card"><div class="initials">${initials(x.name)}</div><h3>${x.name}</h3><p>${x.note||"Going"}</p></article>`).join("")
   : `<div class="form-fallback"><b>No crew entries yet.</b></div>`;
 }
+function renderMainlandFlights(){
+ $("#mainlandFlightTableBody").innerHTML=state.mainlandFlights.map(x=>`<tr><td>${x.name}</td><td>${x.arrival||"—"}</td><td>${x.arrivalFlight||"—"}</td><td>${x.departure||"—"}</td><td>${x.departureFlight||"—"}</td></tr>`).join("")
+  || `<tr><td colspan="5">No mainland flight information yet.</td></tr>`;
+}
 function renderFlights(){
  $("#flightTableBody").innerHTML=state.flights.map(x=>`<tr><td>${x.name}</td><td>${x.arrival||"—"}</td><td>${x.arrivalFlight||"—"}</td><td>${x.departure||"—"}</td><td>${x.departureFlight||"—"}</td></tr>`).join("")
-  || `<tr><td colspan="5">No flight information yet.</td></tr>`;
+  || `<tr><td colspan="5">No Galápagos flight information yet.</td></tr>`;
 }
-function renderAll(){renderAnnouncements();renderItinerary();renderActivities();renderCrew();renderFlights()}
+function renderAll(){renderAnnouncements();renderItinerary();renderActivities();renderCrew();renderMainlandFlights();renderFlights()}
 function countdown(){const start=new Date(CFG.trip?.startDate||"2026-12-27");$("#daysToGo").textContent=Math.max(0,Math.ceil((start-new Date())/86400000))}
 const modal=$("#modalBackdrop"),body=$("#modalBody"),title=$("#modalTitle"),eyebrow=$("#modalEyebrow");
 function openModal(kind,extra={}){
  const f=CFG.forms||{};let label="",url="";
  if(kind==="proposal"){label="ACTIVITY";title.textContent="Propose an activity";url=f.activityProposal}
  if(kind==="crew"){label="CREW";title.textContent="Add / update my info";url=f.crew}
- if(kind==="flight"){label="FLIGHTS";title.textContent="Add my flight info";url=f.flight}
+ if(kind==="mainlandFlight"){label="MAINLAND FLIGHTS";title.textContent="Add my mainland Ecuador flight";url=f.mainlandFlight}
+ if(kind==="flight"){label="GALÁPAGOS FLIGHTS";title.textContent="Add my Galápagos flight";url=f.flight}
  if(kind==="signup"){
   label="ACTIVITY SIGN-UP";title.textContent=extra.status?`${extra.status}: ${extra.name}`:`Change RSVP: ${extra.name}`;url=f.activitySignup;
   if(url){
@@ -446,7 +462,7 @@ $("#modalClose").addEventListener("click",closeModal);modal.addEventListener("cl
 $("#menuButton").addEventListener("click",()=>$("#mobileMenu").classList.toggle("open"));
 $$(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>$("#mobileMenu").classList.remove("open")));
 $$("#activityFilters button").forEach(b=>b.addEventListener("click",()=>{$$("#activityFilters button").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderActivities(b.dataset.filter)}));
-console.info("[Trip Site] V2.9 clean started");
+console.info("[Trip Site] V2.10 mainland flights started");
 renderAll();
 countdown();
 loadData();

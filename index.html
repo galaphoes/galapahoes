@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=5">
 
 <style>
 .rsvp-lists{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
@@ -104,7 +104,7 @@
 
           <div class="quick-actions">
             <h3>Quick links</h3>
-            <button data-form="flight">✈️ Add my flight info <span>→</span></button>
+            <a href="#flights">✈️ Add flight info <span>→</span></a>
             <button data-form="proposal">🌊 Propose an activity <span>→</span></button>
             <a href="#activities">🧭 Browse activities <span>→</span></a>
             <a href="#crew">👥 See the crew <span>→</span></a>
@@ -171,24 +171,59 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">GETTING THERE</p>
-          <h2>Flight board</h2>
+          <h2>Flight boards</h2>
         </div>
-        <button class="btn primary" data-form="flight">Add my flight</button>
+        <p>Two legs, two boards: getting to mainland Ecuador and getting out to the islands.</p>
       </div>
 
-      <div class="table-card">
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Arrival</th>
-              <th>Flight</th>
-              <th>Departure</th>
-              <th>Flight</th>
-            </tr>
-          </thead>
-          <tbody id="flightTableBody"></tbody>
-        </table>
+      <div class="flight-board">
+        <div class="flight-board-head">
+          <div>
+            <p class="flight-label">MAINLAND ECUADOR</p>
+            <h3>Flights to Ecuador</h3>
+            <p>International / mainland arrival and departure details.</p>
+          </div>
+          <button class="btn primary" data-form="mainlandFlight">Add mainland flight</button>
+        </div>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Arrival</th>
+                <th>Flight</th>
+                <th>Departure</th>
+                <th>Flight</th>
+              </tr>
+            </thead>
+            <tbody id="mainlandFlightTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flight-board">
+        <div class="flight-board-head">
+          <div>
+            <p class="flight-label">GALÁPAGOS ISLANDS</p>
+            <h3>Flights to the islands</h3>
+            <p>Mainland-to-Galápagos arrival and return-flight details.</p>
+          </div>
+          <button class="btn outline" data-form="flight">Add Galápagos flight</button>
+        </div>
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Arrival</th>
+                <th>Flight</th>
+                <th>Departure</th>
+                <th>Flight</th>
+              </tr>
+            </thead>
+            <tbody id="flightTableBody"></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -222,6 +257,6 @@
   <div class="toast" id="toast"></div>
 
   <script src="config.js"></script>
-  <script src="app-v29.js?v=4"></script>
+  <script src="app-v29.js?v=5"></script>
 </body>
 </html>
